@@ -1,6 +1,6 @@
 # Build a COMPLETE  Full Stack Nextjs App with Auth, Likes, Comment , Post | Mongodb, Nodejs
 
-![Alt text]([Full%20Stack%20E-Commerce%20MERN%20App.png](https://drive.google.com/file/d/1URO9gC6hXQz6QFwCrLzTzoXapn8cu5tp/view?usp=sharing)?raw=true "Title")
+![Alt text](Facepedia.png?raw=true "Title")
 
 MONGO_URI = 
 CLOUDINARY_CLOUD_NAME =  
