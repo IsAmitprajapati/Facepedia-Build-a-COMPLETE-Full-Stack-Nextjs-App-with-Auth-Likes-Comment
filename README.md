@@ -1,6 +1,6 @@
 # Build a COMPLETE  Full Stack Nextjs App with Auth, Likes, Comment , Post | Mongodb, Nodejs
 
-![Alt text](Facepedia.png?raw=true "Title")
+![Alt text](Facepedia.png.png?raw=true "Title")
 
 MONGO_URI = 
 CLOUDINARY_CLOUD_NAME =  
