@@ -16,7 +16,7 @@ const Avatar = ({ imageURL, userId, width, height, disable , extraWidth = 0, ext
                         width={width + extraWidth}
                         height={height + extraHeight}
                         alt='current user'
-                        className='rounded-full overflow-hidden'
+                        className='rounded-full overflow-hidden drop-shadow-sm'
                     />
                 ) :
                     (

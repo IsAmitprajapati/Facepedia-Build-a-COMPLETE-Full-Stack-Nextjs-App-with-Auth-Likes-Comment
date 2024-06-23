@@ -56,9 +56,9 @@ const Header = () => {
                     </div>
                 </div>
 
-                <div className='flex items-center gap-10 h-full'>
+                <div className='flex items-center gap-10 h-full '>
                     {/**navbar */}
-                    <nav className='flex items-center gap-4 h-full'>
+                    <nav className='hidden lg:flex items-center gap-4 h-full'>
                         {
                             headerNavLink.map((navlink)=>{ 
                                 const isActive = path === navlink.route
@@ -91,6 +91,7 @@ const Header = () => {
                                     width={28}
                                     height={28}
                                     disable={true}
+                                    
                                 />
                                 <p className='text-sm'>Me</p>
                             </div>
@@ -118,6 +119,30 @@ const Header = () => {
                                         </div>
 
                                         <div className='p-[0.5px] my-1 bg-slate-200'></div>
+
+                                        {/**mobile responsive */}
+                                        <nav className='flex lg:hidden justify-center flex-col gap-2 h-full'>
+                                            {
+                                                headerNavLink.map((navlink)=>{ 
+                                                    const isActive = path === navlink.route
+                                                    return(
+                                                        <Link 
+                                                            href={navlink.route}
+                                                            className={`flex flex-row gap-2 h-full px-4 py-3 ${isActive && 'bg-slate-100'}`}
+                                                            onClick={handleOpenClose}
+                                                        >
+                                                            <Image 
+                                                                src={navlink.iconUrl}
+                                                                width={20}
+                                                                height={20}
+                                                                alt={navlink.label}
+                                                            />
+                                                            <p className='text-sm'>{navlink.label}</p>
+                                                        </Link>
+                                                    )
+                                                })
+                                            }
+                                        </nav>
 
                                         <button className=' bg-red-600  text-white rounded hover:bg-red-700  w-full py-1' onClick={handleUserLogout}>Logout</button>
                                     </div>
