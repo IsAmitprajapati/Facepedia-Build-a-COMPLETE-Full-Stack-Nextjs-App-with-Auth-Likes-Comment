@@ -65,6 +65,7 @@ const Header = () => {
                                 return(
                                     <Link 
                                         href={navlink.route}
+                                        key={navlink.route+'navigation'}
                                         className={`flex flex-col justify-center items-center gap-1 h-full px-4 ${isActive && 'bg-slate-100'}`}
                                     >
                                         <Image 

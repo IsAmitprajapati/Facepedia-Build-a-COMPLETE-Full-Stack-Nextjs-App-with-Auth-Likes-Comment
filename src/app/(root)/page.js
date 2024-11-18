@@ -55,7 +55,7 @@ export default function Home() {
 
 
         {/*** upload post and see post*/}
-        <section className="rounded mt-5 lg:mt-0 max-w-2xl">
+        <section className="rounded mt-5 lg:mt-0 lg:max-w-2xl">
             <UploadPost
                _id={user?._id}
                profile_pic={user?.profile_pic}
@@ -71,7 +71,6 @@ export default function Home() {
                   })
                 }
             </div>
-
         </section>
 
 
